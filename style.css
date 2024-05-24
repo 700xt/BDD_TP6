@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh; /* Assure que l'élément occupe au moins 100% de la hauteur de la fenêtre */
+  margin: 0;
+  background-image: url('img/Pixelwar.png'); /* Chemin vers l'image */
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'arrière-plan */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.center-element {
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 80px;
+  text-align: center;
+  height: auto; /* Hauteur automatique en fonction du contenu */
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #16191b;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.button-link:hover {
+  background-color: #050607;
+}
+.alert-warning {
+  color: rgb(216, 7, 7);
+}
+.controls {
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(30, 15px);
+  grid-template-rows: repeat(30, 15px);
+  gap: 1px;
+}
+.pixel {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 5px solid #ddd;
+  cursor: pointer;
+}
+.pixel:hover {
+  background-color: #ccc;
+}
+.tireh1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  font-size: xx-large;
+  color :blue;
+}
+.blocked {
+  pointer-events: none;
+  opacity: 0.80;
+}
